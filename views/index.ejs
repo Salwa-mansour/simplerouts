@@ -1,11 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+   <%- include('parts/header') %>
     <h1>index page!</h1>
+    <p>  <%= message %></p>
+  
     <% const animals = ["Cat", "Dog", "Lemur", "Hawk"] %>
 
 <ul>
@@ -13,6 +18,5 @@
     <li><%= animal %>s are cute</li>
   <% }) %>
 </ul>
-
 </body>
 </html>
